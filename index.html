@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Учет финансов</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="container">
+    <div class="page">
+        <header class="header">
+            <h1 class="header__title">Учет финансов</h1>
+            <div class="header___menu">
+                <a class="btnflip" id="zachislenie" href="./income.html">
+                    <span class="btnflip-item btnflip__front">Зачисление</span>
+                    <span class="btnflip-item btnflip__center"></span>
+                    <span class="btnflip-item btnflip__back">Добавить</span>
+                </a>
+                
+                <a class="btnflip" id="rashod" href="./spend.html">
+                    <span class="btnflip-item btnflip__front">Расход</span>
+                    <span class="btnflip-item btnflip__center"></span>
+                    <span class="btnflip-item btnflip__back">Добавить</span>
+                </a>
+
+                <a class="btnflip" id="account">
+                    <span class="btnflip-item btnflip__front">Аккаунт</span>
+                    <span class="btnflip-item btnflip__center"></span>
+                    <span class="btnflip-item btnflip__back">Посмотреть</span>
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <section class="diagram">
+                <div class="canvas">  
+                    <div class="legend">
+                      <p class="title">Анализ ваших трат</p>    
+                      <ul class="caption-list">
+                        <li class="caption-item">Рестораны и кафе</li>
+                        <li class="caption-item">Транспорт</li>
+                        <li class="caption-item">Развлечение и хобби</li>
+                        <li class="caption-item">Здоровье и красота</li>
+                        <li class="caption-item">Одежда и аксессуары</li>
+                        <li class="caption-item">Супермаркеты</li>
+                      </ul>
+                    </div>
+                    
+                    <svg class="chart" width="500" height="500" viewBox="0 0 50 50">
+                      <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                      <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                      <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                      <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                      <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                      <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                    </svg>
+                  </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Desty, McBit.</p>
+        </footer>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+</body>
